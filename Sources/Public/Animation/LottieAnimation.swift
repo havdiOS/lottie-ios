@@ -14,6 +14,10 @@ public enum CoordinateSpace: Int, Codable, Sendable {
   case type3d
 }
 
+// MARK: - Animation
+
+public typealias Animation = LottieAnimation
+
 // MARK: - LottieAnimation
 
 /// The `LottieAnimation` model is the top level model object in Lottie.

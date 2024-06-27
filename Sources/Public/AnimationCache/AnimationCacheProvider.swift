@@ -10,7 +10,7 @@
 /// can increase performance when loading an animation multiple times.
 ///
 /// Lottie comes with a prebuilt LRU Animation Cache.
-public protocol AnimationCacheProvider: AnyObject, Sendable {
+public protocol AnimationCacheProvider: AnyObject {
 
   func animation(forKey: String) -> LottieAnimation?
 

@@ -66,6 +66,10 @@ extension Double {
   }
 }
 
+// MARK: - Vector2D
+
+public typealias Vector2D = LottieVector2D
+
 // MARK: - LottieVector2D
 
 /// Needed for decoding json {x: y:} to a CGPoint

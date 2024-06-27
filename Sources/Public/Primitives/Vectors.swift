@@ -5,6 +5,10 @@
 //  Created by Brandon Withrow on 2/4/19.
 //
 
+// MARK: - Vector1D
+
+public typealias Vector1D = LottieVector1D
+
 // MARK: - LottieVector1D
 
 public struct LottieVector1D: Hashable, Sendable {
@@ -16,6 +20,10 @@ public struct LottieVector1D: Hashable, Sendable {
   public let value: Double
 
 }
+
+// MARK: - Vector3D
+
+public typealias Vector3D = LottieVector3D
 
 // MARK: - LottieVector3D
 

@@ -24,6 +24,10 @@ public enum ColorFormatDenominator: Hashable {
   }
 }
 
+// MARK: - Color
+
+public typealias Color = LottieColor
+
 // MARK: - LottieColor
 
 public struct LottieColor: Hashable {

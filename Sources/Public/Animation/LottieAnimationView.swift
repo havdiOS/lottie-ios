@@ -84,6 +84,10 @@ extension LottieLoopMode: Equatable {
   }
 }
 
+// MARK: - AnimationView
+
+public typealias AnimationView = LottieAnimationView
+
 // MARK: - LottieAnimationView
 
 /// A UIView subclass for rendering Lottie animations.
