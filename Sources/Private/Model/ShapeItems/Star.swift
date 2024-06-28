@@ -7,7 +7,7 @@
 
 // MARK: - StarType
 
-enum StarType: Int, Codable, Sendable {
+enum StarType: Int, Codable {
   case none
   case star
   case polygon

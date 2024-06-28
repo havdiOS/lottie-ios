@@ -257,10 +257,3 @@ extension [LayerModel] {
     }
   }
 }
-
-// MARK: - LayerModel + Sendable
-
-/// Since `LayerModel` isn't `final`, we have to use `@unchecked Sendable` instead of `Sendable.`
-/// All `LayerModel` subclasses are immutable `Sendable` values.
-// swiftlint:disable:next no_unchecked_sendable
-extension LayerModel: @unchecked Sendable { }

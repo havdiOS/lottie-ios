@@ -3,7 +3,7 @@
 
 // MARK: - LayerStyleType
 
-enum LayerStyleType: Int, Codable, Sendable {
+enum LayerStyleType: Int, Codable {
   case dropShadow = 1
   case unknown = 9999
 
@@ -75,10 +75,3 @@ extension [LayerStyle] {
     }
   }
 }
-
-// MARK: - LayerStyle + Sendable
-
-/// Since `LayerStyle` isn't `final`, we have to use `@unchecked Sendable` instead of `Sendable.`
-/// All `LayerStyle` subclasses are immutable `Sendable` values.
-// swiftlint:disable:next no_unchecked_sendable
-extension LayerStyle: @unchecked Sendable { }

@@ -4,7 +4,7 @@
 // MARK: - LayerEffectType
 
 /// https://lottiefiles.github.io/lottie-docs/schema/#/$defs/effects
-enum LayerEffectType: Int, Codable, Sendable {
+enum LayerEffectType: Int, Codable {
   case dropShadow = 25
   case unknown = 9999
 
@@ -93,10 +93,3 @@ extension [LayerEffect] {
     }
   }
 }
-
-// MARK: - LayerEffect + Sendable
-
-/// Since `LayerEffect` isn't `final`, we have to use `@unchecked Sendable` instead of `Sendable.`
-/// All `LayerEffect` subclasses are immutable `Sendable` values.
-// swiftlint:disable:next no_unchecked_sendable
-extension LayerEffect: @unchecked Sendable { }

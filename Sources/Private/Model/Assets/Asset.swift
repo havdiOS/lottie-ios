@@ -41,10 +41,3 @@ public class Asset: Codable, DictionaryInitializable {
     case id
   }
 }
-
-// MARK: Sendable
-
-/// Since `Asset` isn't `final`, we have to use `@unchecked Sendable` instead of `Sendable.`
-/// All `Asset` subclasses are immutable `Sendable` values.
-// swiftlint:disable:next no_unchecked_sendable
-extension Asset: @unchecked Sendable { }

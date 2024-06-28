@@ -7,7 +7,7 @@
 
 // MARK: - ShapeType
 
-enum ShapeType: String, Codable, Sendable {
+enum ShapeType: String, Codable {
   case ellipse = "el"
   case fill = "fl"
   case gradientFill = "gf"
@@ -162,10 +162,3 @@ extension [ShapeItem] {
     }
   }
 }
-
-// MARK: - ShapeItem + Sendable
-
-/// Since `ShapeItem` isn't `final`, we have to use `@unchecked Sendable` instead of `Sendable.`
-/// All `ShapeItem` subclasses are immutable `Sendable` values.
-// swiftlint:disable:next no_unchecked_sendable
-extension ShapeItem: @unchecked Sendable { }

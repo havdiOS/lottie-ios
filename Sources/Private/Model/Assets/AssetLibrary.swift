@@ -5,7 +5,7 @@
 //  Created by Brandon Withrow on 1/9/19.
 //
 
-final class AssetLibrary: Codable, AnyInitializable, Sendable {
+final class AssetLibrary: Codable, AnyInitializable {
 
   // MARK: Lifecycle
 

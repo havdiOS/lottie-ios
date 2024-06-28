@@ -92,7 +92,3 @@ extension Keyframe: Hashable where T: Hashable {
     hasher.combine(spatialOutTangent)
   }
 }
-
-// MARK: Sendable
-
-extension Keyframe: Sendable where T: Sendable { }

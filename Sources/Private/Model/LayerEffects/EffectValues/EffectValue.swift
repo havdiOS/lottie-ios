@@ -4,7 +4,7 @@
 // MARK: - EffectValueType
 
 /// https://lottiefiles.github.io/lottie-docs/schema/#/$defs/effect-values
-enum EffectValueType: Int, Codable, Sendable {
+enum EffectValueType: Int, Codable {
   case slider = 0
   case angle = 1
   case color = 2
@@ -88,10 +88,3 @@ extension [EffectValue] {
     }
   }
 }
-
-// MARK: - EffectValue + Sendable
-
-/// Since `EffectValue` isn't `final`, we have to use `@unchecked Sendable` instead of `Sendable.`
-/// All `EffectValue` subclasses are immutable `Sendable` values.
-// swiftlint:disable:next no_unchecked_sendable
-extension EffectValue: @unchecked Sendable { }

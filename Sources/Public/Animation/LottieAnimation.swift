@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - CoordinateSpace
 
-public enum CoordinateSpace: Int, Codable, Sendable {
+public enum CoordinateSpace: Int, Codable {
   case type2d
   case type3d
 }
@@ -24,7 +24,7 @@ public typealias Animation = LottieAnimation
 ///
 /// A `LottieAnimation` holds all of the animation data backing a Lottie Animation.
 /// Codable, see JSON schema [here](https://github.com/airbnb/lottie-web/tree/master/docs/json).
-public final class LottieAnimation: Codable, Sendable, DictionaryInitializable {
+public final class LottieAnimation: Codable, DictionaryInitializable {
 
   // MARK: Lifecycle
 

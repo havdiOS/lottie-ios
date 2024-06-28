@@ -6,7 +6,7 @@
 //
 
 /// A time marker
-final class Marker: Codable, Sendable, DictionaryInitializable {
+final class Marker: Codable, DictionaryInitializable {
 
   // MARK: Lifecycle
 

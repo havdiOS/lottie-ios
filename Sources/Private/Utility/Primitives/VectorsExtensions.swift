@@ -73,7 +73,7 @@ public typealias Vector2D = LottieVector2D
 // MARK: - LottieVector2D
 
 /// Needed for decoding json {x: y:} to a CGPoint
-public struct LottieVector2D: Codable, Hashable, Sendable {
+public struct LottieVector2D: Codable, Hashable {
 
   // MARK: Lifecycle
 

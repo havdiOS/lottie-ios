@@ -10,7 +10,7 @@ struct AnimationListView: View {
 
   // MARK: Internal
 
-  enum Content: Hashable, Sendable {
+  enum Content: Hashable {
     case directory(_ directory: String)
     case custom(name: String, items: [Item])
   }
@@ -98,7 +98,7 @@ extension AnimationListView {
 
   // MARK: Internal
 
-  enum Item: Hashable, Sendable {
+  enum Item: Hashable {
     case animationList(AnimationListView.Content)
     case animation(name: String, path: String)
     case remoteAnimations(name: String, urls: [URL])

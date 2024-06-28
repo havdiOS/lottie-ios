@@ -11,7 +11,7 @@ public typealias Vector1D = LottieVector1D
 
 // MARK: - LottieVector1D
 
-public struct LottieVector1D: Hashable, Sendable {
+public struct LottieVector1D: Hashable {
 
   public init(_ value: Double) {
     self.value = value
@@ -29,7 +29,7 @@ public typealias Vector3D = LottieVector3D
 
 /// A three dimensional vector.
 /// These vectors are encoded and decoded from [Double]
-public struct LottieVector3D: Hashable, Sendable {
+public struct LottieVector3D: Hashable {
 
   public let x: Double
   public let y: Double

@@ -57,10 +57,3 @@ public class DotLottieCache: DotLottieCacheProvider {
   private var cache = LRUCache<String, DotLottieFile>()
 
 }
-
-// MARK: Sendable
-
-// DotLottieCacheProvider has a Sendable requirement, but we can't
-// redesign DotLottieCache to be properly Sendable without making breaking changes.
-// swiftlint:disable:next no_unchecked_sendable
-extension DotLottieCache: @unchecked Sendable { }

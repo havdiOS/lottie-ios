@@ -86,7 +86,8 @@ extension LottieLoopMode: Equatable {
 
 // MARK: - AnimationView
 
-public typealias AnimationView = LottieAnimationView
+@IBDesignable
+open class AnimationView: LottieAnimationView {}
 
 // MARK: - LottieAnimationView
 

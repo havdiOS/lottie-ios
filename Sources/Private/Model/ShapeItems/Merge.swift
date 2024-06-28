@@ -7,7 +7,7 @@
 
 // MARK: - MergeMode
 
-enum MergeMode: Int, Codable, Sendable {
+enum MergeMode: Int, Codable {
   case none
   case merge
   case add

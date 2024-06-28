@@ -57,11 +57,3 @@ public class DefaultAnimationCache: AnimationCacheProvider {
   ///    only when the app receives a memory warning notification.
   private let cache = LRUCache<String, LottieAnimation>()
 }
-
-// MARK: Sendable
-
-// LottieAnimationCache has a Sendable requirement, but we can't
-// redesign DefaultAnimationCache to be properly Sendable without
-// making breaking changes.
-// swiftlint:disable:next no_unchecked_sendable
-extension DefaultAnimationCache: @unchecked Sendable { }
